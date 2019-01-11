@@ -118,13 +118,13 @@ func createModItems(repo []string, path string, mods *map[string]model.Mod) {
 		switch key {
 		case model.Cmd:
 			arg = path
-			sub = "Open '" + path + "' in editor."
+			sub = "Open '" + path + "' in finder."
 		case model.Shift:
 			arg = "https://" + excludeDomain(repo, false) + "/"
 			sub = "Open '" + arg + "' in browser."
 		case model.Ctrl:
 			arg = path
-			sub = "Open '" + path + "' in terminal."
+			sub = "Open '" + path + "' in editor."
 		case model.Alt:
 			arg = excludeDomain(repo, true)
 			sub = "Search '" + arg + "' with google."
